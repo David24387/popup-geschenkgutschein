@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Euromaster Geschenkgutscheine – Popup-Vorschau</title>
+<style>body{margin:0;background:#f2f5fa;font-family:Montserrat,Arial,sans-serif;color:#164194}main{max-width:620px;margin:12vh auto;padding:24px}h1{font-size:28px}button{background:#164194;color:white;border:0;padding:14px 20px;border-radius:10px;font:inherit;cursor:pointer}</style></head>
+<body><main><h1>Popup-Vorschau</h1><p>Euromaster-Geschenkgutscheine</p><button type="button" onclick="location.reload()">Popup erneut anzeigen</button></main>
+<script>
+window.defineBlock = function(bundle) {
+  try { sessionStorage.removeItem('em-gutscheine-hinweis-20261106-v1'); } catch (_) {}
+  const Widget = bundle.blockDefinition.factory(class {});
+  const container = document.createElement('div');
+  document.body.appendChild(container);
+  new Widget().renderBlock(container);
+};
+</script><script src="./euromaster.geschenkgutscheine-popup.js"></script></body></html>
